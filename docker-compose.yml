@@ -1,6 +1,15 @@
 version: '3'
 services:
-  mppm:
-    build: .
-    ports: 
-      - "9090:3000"
+  api:
+    build: api/.
+    ports:
+      - "9090:4001"
+    volumes:
+      - "./api/mppm-api:/mppm-api"
+
+  node:
+    build: node/.
+    ports:
+      - "9191:3001"
+    volumes:
+      - "./node/mppm-node:/mppm-node"

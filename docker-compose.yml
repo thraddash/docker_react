@@ -10,6 +10,6 @@ services:
   node:
     build: node/.
     ports:
-      - "9191:3001"
+      - "9191:3000"
     volumes:
       - "./node/mppm-node:/mppm-node"

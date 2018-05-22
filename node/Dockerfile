@@ -5,7 +5,9 @@ MAINTAINER thraddash
 
 # Install nodejs and npm
 WORKDIR /mppm-node
-RUN npm install -g create-react-app
+#RUN npm install -g create-react-app
+RUN npm install dotenv
+RUN npm install react-sweet-progress
 RUN npm install
 RUN node -v 
 RUN npm -v
@@ -15,4 +17,4 @@ RUN npm -v
 #WORKDIR /mppm-node
 CMD npm start
 
-EXPOSE 3001
+EXPOSE 3000

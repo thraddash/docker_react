@@ -5,7 +5,8 @@ MAINTAINER thraddash
 
 WORKDIR /mppm-api
 # Install nodejs and npm
-RUN npm install -g create-react-app
+#RUN npm install -g create-react-app
+RUN npm install dotenv
 RUN npm install
 RUN node -v
 RUN npm -v
